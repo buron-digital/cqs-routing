@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Command\Command;
 
 final readonly class CreateTaskCommand implements Command
 {

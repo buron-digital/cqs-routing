@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Utility;
+namespace BuronDigital\CQSRouting\Test\Utility;
 
-use DigitalCraftsman\CQSRouting\Test\ValueObject\UserId;
+use BuronDigital\CQSRouting\Test\ValueObject\UserId;
 
 final class SecuritySimulator
 {

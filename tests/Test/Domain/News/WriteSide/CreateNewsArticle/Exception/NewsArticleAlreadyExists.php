@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception;
+namespace BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception;
 
 /** @psalm-immutable */
 final class NewsArticleAlreadyExists extends \DomainException

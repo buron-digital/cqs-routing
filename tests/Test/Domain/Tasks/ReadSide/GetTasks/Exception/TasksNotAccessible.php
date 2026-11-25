@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception;
 
 /** @psalm-immutable */
 final class TasksNotAccessible extends \DomainException

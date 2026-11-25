@@ -2,11 +2,17 @@
 
 Build Symfony endpoints from small, typed building blocks instead of fat controllers. Each endpoint is just a **command or query**, a **handler** with the business logic and **one route definition**. Everything around it – decoding the request, constructing the DTO, validation, transactions and building the response – is done by reusable components that you configure once.
 
-[![Latest Stable Version](https://img.shields.io/badge/stable-2.2.0-blue)](https://packagist.org/packages/digital-craftsman/cqs-routing)
-[![PHP Version Require](https://img.shields.io/badge/php-8.5|8.6-5b5d95)](https://packagist.org/packages/digital-craftsman/cqs-routing)
-[![codecov](https://codecov.io/gh/digital-craftsman-de/cqs-routing/branch/main/graph/badge.svg?token=YUKRDW1L8G)](https://codecov.io/gh/digital-craftsman-de/cqs-routing)
-![Packagist Downloads](https://img.shields.io/packagist/dt/digital-craftsman/cqs-routing)
-![Packagist License](https://img.shields.io/packagist/l/digital-craftsman/cqs-routing)
+[![Latest Stable Version](https://img.shields.io/badge/stable-3.0.0-blue)](https://packagist.org/packages/buron-digital/cqs-routing)
+[![PHP Version Require](https://img.shields.io/badge/php-8.5|8.6-5b5d95)](https://packagist.org/packages/buron-digital/cqs-routing)
+[![codecov](https://codecov.io/gh/buron-digital/cqs-routing/branch/main/graph/badge.svg?token=YUKRDW1L8G)](https://codecov.io/gh/buron-digital/cqs-routing)
+![Packagist Downloads](https://img.shields.io/packagist/dt/buron-digital/cqs-routing)
+![Packagist License](https://img.shields.io/packagist/l/buron-digital/cqs-routing)
+
+> [!NOTE]
+> Up to version 2.2.0, the package was published as [`digital-craftsman/cqs-routing`](https://packagist.org/packages/digital-craftsman/cqs-routing) with the namespace `DigitalCraftsman\CQSRouting`. See the [upgrade guide](./UPGRADE.md#renamed-package-and-namespace) for how to switch.
+>
+> Downloads under the old name:\
+> [![Packagist Downloads](https://img.shields.io/packagist/dt/digital-craftsman/cqs-routing)](https://packagist.org/packages/digital-craftsman/cqs-routing)
 
 ## Why?
 
@@ -110,7 +116,7 @@ The full process including all optional components and when to use (and not to u
 Requires PHP 8.5 or 8.6 and Symfony 7.4 or 8.
 
 ```shell
-composer require digital-craftsman/cqs-routing
+composer require buron-digital/cqs-routing
 ```
 
 ### Configuration
@@ -122,10 +128,10 @@ Add a `config/packages/cqs-routing.php` file with the default components for all
 
 declare(strict_types=1);
 
-use DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor;
-use DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
+use BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor;
+use BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder;
+use BuronDigital\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
+use BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
 use Symfony\Component\DependencyInjection\Loader\Configurator\App;
 
 return App::config([
@@ -166,7 +172,7 @@ namespace App\Domain\News\WriteSide\CreateNewsArticle;
 use App\Helper\HtmlHelper;
 use App\ValueObject\UserId;
 use Assert\Assertion;
-use DigitalCraftsman\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Command\Command;
 
 final readonly class CreateNewsArticleCommand implements Command
 {
@@ -200,7 +206,7 @@ namespace App\Domain\News\WriteSide\CreateNewsArticle;
 use App\Entity\NewsArticle;
 use App\Repository\UserRepository;
 use App\ValueObject\NewsArticleId;
-use DigitalCraftsman\CQSRouting\Command\CommandHandler;
+use BuronDigital\CQSRouting\Command\CommandHandler;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Clock\ClockInterface;
 
@@ -248,7 +254,7 @@ Routes are defined in PHP through the `RouteBuilder`. You only need to define th
 
 declare(strict_types=1);
 
-use DigitalCraftsman\CQSRouting\Routing\RouteBuilder;
+use BuronDigital\CQSRouting\Routing\RouteBuilder;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return static function (RoutingConfigurator $routes) {
@@ -286,3 +292,9 @@ The `RouteBuilder` chooses the controller (`addCommandRoute` or `addQueryRoute`)
 ## Sponsors
 
 [![Blackfire](./sponsors/blackfire.png)](https://blackfire.io)
+
+## Who's behind this
+
+<a href="https://www.buron.digital"><img src="https://raw.githubusercontent.com/buron-digital/cqs-routing/main/.github/assets/buron-digital-banner.png" alt="Christian Kolb, Buron Digital – Building your digital products. Free initial consultation." width="100%"></a>
+
+<p align="center"><sub><a href="https://www.buron.digital">www.buron.digital</a> · <a href="mailto:info@buron.digital">info@buron.digital</a></sub></p>

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
 
-use DigitalCraftsman\CQSRouting\Query\QueryHandler;
-use DigitalCraftsman\CQSRouting\Test\Repository\TasksInMemoryRepository;
+use BuronDigital\CQSRouting\Query\QueryHandler;
+use BuronDigital\CQSRouting\Test\Repository\TasksInMemoryRepository;
 
 final readonly class GetTasksQueryHandler implements QueryHandler
 {

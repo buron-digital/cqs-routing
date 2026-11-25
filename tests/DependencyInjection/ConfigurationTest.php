@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\DependencyInjection;
+namespace BuronDigital\CQSRouting\DependencyInjection;
 
-use DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\SilentExceptionWrapper;
-use DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\Test\Application\Authentication\UserIdValidator;
-use DigitalCraftsman\CQSRouting\Test\Application\ConnectionTransactionWrapper;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception\TasksNotAccessible;
+use BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor;
+use BuronDigital\CQSRouting\HandlerWrapper\SilentExceptionWrapper;
+use BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder;
+use BuronDigital\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
+use BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
+use BuronDigital\CQSRouting\Test\Application\Authentication\UserIdValidator;
+use BuronDigital\CQSRouting\Test\Application\ConnectionTransactionWrapper;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception\TasksNotAccessible;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

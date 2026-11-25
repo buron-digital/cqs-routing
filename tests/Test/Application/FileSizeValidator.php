@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Application;
+namespace BuronDigital\CQSRouting\Test\Application;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\DTOValidator\DTOValidator;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Test\Application\Exception\FileSizeTooLarge;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\DTOValidator\DTOValidator;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Test\Application\Exception\FileSizeTooLarge;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 

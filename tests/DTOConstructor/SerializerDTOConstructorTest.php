@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\DTOConstructor;
+namespace BuronDigital\CQSRouting\DTOConstructor;
 
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\UserId;
-use DigitalCraftsman\SelfAwareNormalizers\Serializer\ArrayNormalizableNormalizer;
-use DigitalCraftsman\SelfAwareNormalizers\Serializer\StringNormalizableNormalizer;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
+use BuronDigital\CQSRouting\Test\ValueObject\UserId;
+use BuronDigital\SelfAwareNormalizers\Serializer\ArrayNormalizableNormalizer;
+use BuronDigital\SelfAwareNormalizers\Serializer\StringNormalizableNormalizer;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

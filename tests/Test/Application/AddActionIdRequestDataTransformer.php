@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Application;
+namespace BuronDigital\CQSRouting\Test\Application;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\RequestDataTransformer\RequestDataTransformer;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\ActionId;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\RequestDataTransformer\RequestDataTransformer;
+use BuronDigital\CQSRouting\Test\ValueObject\ActionId;
 
 final class AddActionIdRequestDataTransformer implements RequestDataTransformer
 {

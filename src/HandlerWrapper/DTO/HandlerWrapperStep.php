@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\HandlerWrapper\DTO;
+namespace BuronDigital\CQSRouting\HandlerWrapper\DTO;
 
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
 
 /**
  * Handler wrappers are used to wrap command handlers and query handlers. With them, it's possible to for example start a doctrine

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\RequestDecoder;
+namespace BuronDigital\CQSRouting\RequestDecoder;
 
 use Symfony\Component\HttpFoundation\Request;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\ResponseConstructor;
+namespace BuronDigital\CQSRouting\ResponseConstructor;
 
-use DigitalCraftsman\CQSRouting\Test\ReadModel\User as UserReadModel;
+use BuronDigital\CQSRouting\Test\ReadModel\User as UserReadModel;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;

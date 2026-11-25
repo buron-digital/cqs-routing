@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
+namespace BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
 
-use DigitalCraftsman\CQSRouting\RequestDataTransformer\RequestDataTransformer;
+use BuronDigital\CQSRouting\RequestDataTransformer\RequestDataTransformer;
 
 final readonly class CreateNewsArticleRequestDataTransformer implements RequestDataTransformer
 {

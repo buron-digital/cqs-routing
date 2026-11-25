@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\ValueObject;
+namespace BuronDigital\CQSRouting\Test\ValueObject;
 
-use DigitalCraftsman\Ids\ValueObject\Id;
+use BuronDigital\Ids\ValueObject\Id;
 
 final readonly class TaskId extends Id
 {

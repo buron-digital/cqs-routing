@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\DefineTaskHourContingent;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\DefineTaskHourContingent;
 
-use DigitalCraftsman\CQSRouting\RequestDataTransformer\RequestDataTransformer;
+use BuronDigital\CQSRouting\RequestDataTransformer\RequestDataTransformer;
 
 final class DefineTaskHourContingentRequestDataTransformer implements RequestDataTransformer
 {

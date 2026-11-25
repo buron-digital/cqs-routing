@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
 
-use DigitalCraftsman\CQSRouting\DTOConstructor\DTOConstructor;
+use BuronDigital\CQSRouting\DTOConstructor\DTOConstructor;
 
 final class CreateTaskDTOConstructor implements DTOConstructor
 {

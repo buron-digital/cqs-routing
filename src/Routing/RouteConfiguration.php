@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Routing;
+namespace BuronDigital\CQSRouting\Routing;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Command\CommandHandler;
-use DigitalCraftsman\CQSRouting\DTOConstructor\DTOConstructor;
-use DigitalCraftsman\CQSRouting\DTOValidator\DTOValidator;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Query\QueryHandler;
-use DigitalCraftsman\CQSRouting\RequestDataTransformer\RequestDataTransformer;
-use DigitalCraftsman\CQSRouting\RequestDecoder\RequestDecoder;
-use DigitalCraftsman\CQSRouting\RequestValidator\RequestValidator;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\ResponseConstructor;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Command\CommandHandler;
+use BuronDigital\CQSRouting\DTOConstructor\DTOConstructor;
+use BuronDigital\CQSRouting\DTOValidator\DTOValidator;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Query\QueryHandler;
+use BuronDigital\CQSRouting\RequestDataTransformer\RequestDataTransformer;
+use BuronDigital\CQSRouting\RequestDecoder\RequestDecoder;
+use BuronDigital\CQSRouting\RequestValidator\RequestValidator;
+use BuronDigital\CQSRouting\ResponseConstructor\ResponseConstructor;
 
 /**
  * The configuration is the result of the route payload in combination with the defaults to be used by the controller.

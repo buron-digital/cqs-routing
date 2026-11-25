@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\RequestValidator;
+namespace BuronDigital\CQSRouting\Test\RequestValidator;
 
-use DigitalCraftsman\CQSRouting\RequestValidator\RequestValidator;
+use BuronDigital\CQSRouting\RequestValidator\RequestValidator;
 use Symfony\Component\HttpFoundation\Request;
 
 final readonly class GuardAgainstTokenInHeaderRequestValidator implements RequestValidator

@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\TestUtility;
+namespace BuronDigital\CQSRouting\TestUtility;
 
-use DigitalCraftsman\CQSRouting\Controller\CommandController;
-use DigitalCraftsman\CQSRouting\Controller\QueryController;
-use DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor;
-use DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyResponseConstructor;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\Routing\RouteBuilder;
-use DigitalCraftsman\CQSRouting\Routing\RouteConfigurationBuilder;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
-use DigitalCraftsman\CQSRouting\Test\AppTestCase;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQuery;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQueryHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommand;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommandHandler;
-use DigitalCraftsman\CQSRouting\Test\Router\RouterFake;
+use BuronDigital\CQSRouting\Controller\CommandController;
+use BuronDigital\CQSRouting\Controller\QueryController;
+use BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor;
+use BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder;
+use BuronDigital\CQSRouting\ResponseConstructor\EmptyResponseConstructor;
+use BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
+use BuronDigital\CQSRouting\Routing\RouteBuilder;
+use BuronDigital\CQSRouting\Routing\RouteConfigurationBuilder;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\Test\AppTestCase;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQuery;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQueryHandler;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommand;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommandHandler;
+use BuronDigital\CQSRouting\Test\Router\RouterFake;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use Symfony\Component\Routing\Route;

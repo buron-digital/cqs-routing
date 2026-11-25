@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0
+
+- **[Breaking change](./UPGRADE.md#renamed-package-and-namespace)**: Renamed the package from `digital-craftsman/cqs-routing` to `buron-digital/cqs-routing` and the namespace from `DigitalCraftsman\CQSRouting` to `BuronDigital\CQSRouting`. Apart from the names, nothing changed.
+
 ## 2.2.0
 
 - Added support for PHP 8.6.

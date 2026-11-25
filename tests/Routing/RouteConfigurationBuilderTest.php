@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Routing;
+namespace BuronDigital\CQSRouting\Routing;
 
-use DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\SilentExceptionWrapper;
-use DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyResponseConstructor;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\Test\Application\AddActionIdRequestDataTransformer;
-use DigitalCraftsman\CQSRouting\Test\Application\UserIdValidator;
-use DigitalCraftsman\CQSRouting\Test\AppTestCase;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommandHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQuery;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQueryHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommand;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommandHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskDTOConstructor;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskRequestDecoder;
-use DigitalCraftsman\CQSRouting\Test\RequestValidator\GuardAgainstFileWithVirusRequestValidator;
+use BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor;
+use BuronDigital\CQSRouting\HandlerWrapper\SilentExceptionWrapper;
+use BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder;
+use BuronDigital\CQSRouting\ResponseConstructor\EmptyResponseConstructor;
+use BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
+use BuronDigital\CQSRouting\Test\Application\AddActionIdRequestDataTransformer;
+use BuronDigital\CQSRouting\Test\Application\UserIdValidator;
+use BuronDigital\CQSRouting\Test\AppTestCase;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommandHandler;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQuery;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\GetTasksQueryHandler;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommand;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskCommandHandler;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskDTOConstructor;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask\CreateTaskRequestDecoder;
+use BuronDigital\CQSRouting\Test\RequestValidator\GuardAgainstFileWithVirusRequestValidator;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 

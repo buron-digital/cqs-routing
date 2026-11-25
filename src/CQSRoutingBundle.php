@@ -1,6 +1,6 @@
 <?php
 
-namespace DigitalCraftsman\CQSRouting;
+namespace BuronDigital\CQSRouting;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

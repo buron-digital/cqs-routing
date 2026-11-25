@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\RequestDecoder;
+namespace BuronDigital\CQSRouting\RequestDecoder;
 
 use Symfony\Component\HttpFoundation\Request;
 
@@ -13,8 +13,8 @@ use Symfony\Component\HttpFoundation\Request;
  * It must not be used to:
  * - Validate the request in any way.
  *
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/process.md
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/examples/request-decoder.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/process.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/examples/request-decoder.md
  */
 interface RequestDecoder
 {
