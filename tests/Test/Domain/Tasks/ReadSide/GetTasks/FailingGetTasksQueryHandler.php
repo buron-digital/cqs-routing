@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
 
-use DigitalCraftsman\CQSRouting\Query\QueryHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception\TasksNotAccessible;
+use BuronDigital\CQSRouting\Query\QueryHandler;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks\Exception\TasksNotAccessible;
 
 final readonly class FailingGetTasksQueryHandler implements QueryHandler
 {

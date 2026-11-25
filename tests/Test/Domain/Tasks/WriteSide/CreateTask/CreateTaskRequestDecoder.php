@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\CreateTask;
 
-use DigitalCraftsman\CQSRouting\RequestDecoder\RequestDecoder;
+use BuronDigital\CQSRouting\RequestDecoder\RequestDecoder;
 use Symfony\Component\HttpFoundation\Request;
 
 final class CreateTaskRequestDecoder implements RequestDecoder

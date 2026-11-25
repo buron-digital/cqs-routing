@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\TaskId;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Test\ValueObject\TaskId;
 
 final readonly class MarkTaskAsAcceptedCommand implements Command
 {

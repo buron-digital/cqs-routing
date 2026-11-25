@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Controller;
+namespace BuronDigital\CQSRouting\Controller;
 
-use DigitalCraftsman\CQSRouting\HandlerWrapper\DTO\HandlerWrapperStep;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Routing\RouteConfigurationBuilder;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
-use DigitalCraftsman\CQSRouting\ServiceMap\ServiceMap;
+use BuronDigital\CQSRouting\HandlerWrapper\DTO\HandlerWrapperStep;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Routing\RouteConfigurationBuilder;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\ServiceMap\ServiceMap;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

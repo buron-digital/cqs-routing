@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Repository;
+namespace BuronDigital\CQSRouting\Test\Repository;
 
-use DigitalCraftsman\CQSRouting\Test\Entity\NewsArticle;
+use BuronDigital\CQSRouting\Test\Entity\NewsArticle;
 
 final class NewsArticleInMemoryRepository
 {

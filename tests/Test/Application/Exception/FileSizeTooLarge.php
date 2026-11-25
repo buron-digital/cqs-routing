@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Application\Exception;
+namespace BuronDigital\CQSRouting\Test\Application\Exception;
 
 /** @psalm-immutable */
 final class FileSizeTooLarge extends \DomainException

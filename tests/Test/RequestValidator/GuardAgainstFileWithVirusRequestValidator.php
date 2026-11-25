@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\RequestValidator;
+namespace BuronDigital\CQSRouting\Test\RequestValidator;
 
-use DigitalCraftsman\CQSRouting\RequestValidator\RequestValidator;
-use DigitalCraftsman\CQSRouting\Test\Utility\VirusScannerSimulator;
+use BuronDigital\CQSRouting\RequestValidator\RequestValidator;
+use BuronDigital\CQSRouting\Test\Utility\VirusScannerSimulator;
 use Symfony\Component\HttpFoundation\Request;
 
 final readonly class GuardAgainstFileWithVirusRequestValidator implements RequestValidator

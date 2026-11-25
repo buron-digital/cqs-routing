@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test;
+namespace BuronDigital\CQSRouting\Test;
 
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 

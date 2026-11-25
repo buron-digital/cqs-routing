@@ -10,10 +10,10 @@ declare(strict_types=1);
 use App\Application\CQSRouting\DTOValidator\AccessValidator;
 use App\Application\CQSRouting\DTOValidator\DTO\AccessValidatorParameters;
 use App\Application\CQSRouting\HandlerWrapper\ConnectionTransactionWrapper;
-use DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor;
-use DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
-use DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
+use BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor;
+use BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder;
+use BuronDigital\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor;
+use BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor;
 use Symfony\Component\DependencyInjection\Loader\Configurator\App;
 
 return App::config([
@@ -70,14 +70,14 @@ cqs_routing:
       'App\CQSRouting\RequestValidator\GuardAgainstTokenInHeaderRequestValidator': null
 
     # Class of the default request decoder of command controller when there is none defined for the route
-    default_request_decoder_class: 'DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder'
+    default_request_decoder_class: 'BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder'
 
     # Classes of the default request data transformer of command controller when there is none defined for the route
     default_request_data_transformer_classes:
       'App\CQSRouting\RequestDataTransformer\AddActionIdRequestDataTransformer': null
     
     # Class of the default DTO constructor of command controller when there is none defined for the route
-    default_dto_constructor_class: 'DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor'
+    default_dto_constructor_class: 'BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor'
 
     # Classes of the default DTO validator of command controller when there is none defined for the route
     default_dto_validator_classes:
@@ -89,7 +89,7 @@ cqs_routing:
       'App\CQSRouting\HandlerWrapper\ConnectionTransactionWrapper': null
 
     # Class of the default response constructor of command controller when there is none defined for the route
-    default_response_constructor_class: 'DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor'
+    default_response_constructor_class: 'BuronDigital\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor'
 
   query:
 
@@ -98,14 +98,14 @@ cqs_routing:
       'App\CQSRouting\RequestValidator\GuardAgainstTokenInHeaderRequestValidator': null
     
     # Class of the default request decoder of query controller when there is none defined for the route
-    default_request_decoder_class: 'DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder'
+    default_request_decoder_class: 'BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder'
 
     # Classes of the default request data transformer of query controller when there is none defined for the route
     default_request_data_transformer_classes:
       'App\CQSRouting\RequestDataTransformer\AddActionIdRequestDataTransformer': null
     
     # Class of the default DTO constructor of query controller when there is none defined for the route
-    default_dto_constructor_class: 'DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor'
+    default_dto_constructor_class: 'BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor'
     
     # Classes of the default DTO validator of query controller when there is none defined for the route
     default_dto_validator_classes:
@@ -117,5 +117,5 @@ cqs_routing:
       'App\CQSRouting\HandlerWrapper\ConnectionTransactionWrapper': null
     
     # Class of the default response constructor of query controller when there is none defined for the route
-    default_response_constructor_class: 'DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor'
+    default_response_constructor_class: 'BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor'
 ```

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\RequestDataTransformer;
+namespace BuronDigital\CQSRouting\RequestDataTransformer;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
 
 /**
  * The data transformer can have three kinds of tasks and multiple data transformers can be used with one request.
@@ -16,8 +16,8 @@ use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
  *  It must not be used to:
  * - Validate the request data in any way. That must be handled in the DTO validator.
  *
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/process.md
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/examples/request-data-transformer.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/process.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/examples/request-data-transformer.md
  *
  * @psalm-import-type NormalizedConfigurationParameters from RoutePayload
  */

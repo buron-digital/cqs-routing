@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\HandlerWrapper;
+namespace BuronDigital\CQSRouting\HandlerWrapper;
 
-use DigitalCraftsman\CQSRouting\Test\AppTestCase;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\Exception\TaskAlreadyAccepted;
-use DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\MarkTaskAsAcceptedCommand;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\TaskId;
+use BuronDigital\CQSRouting\Test\AppTestCase;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\CreateNewsArticleCommand;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\Exception\TaskAlreadyAccepted;
+use BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\MarkTaskAsAcceptedCommand;
+use BuronDigital\CQSRouting\Test\ValueObject\TaskId;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use Symfony\Component\HttpFoundation\Request;

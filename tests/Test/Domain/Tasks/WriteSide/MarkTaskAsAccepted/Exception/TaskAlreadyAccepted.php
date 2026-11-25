@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\Exception;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\WriteSide\MarkTaskAsAccepted\Exception;
 
 /** @psalm-immutable */
 final class TaskAlreadyAccepted extends \DomainException

@@ -64,9 +64,9 @@ declare(strict_types=1);
 
 namespace App\CQSRouting\HandlerWrapper;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Query\Query;
 use Doctrine\DBAL\Connection;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -156,11 +156,11 @@ The `areParametersValid` method is written in a way that it's not possible to su
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\HandlerWrapper;
+namespace BuronDigital\CQSRouting\HandlerWrapper;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Query\Query;
 use Symfony\Component\HttpFoundation\Request;
 
 final readonly class SilentExceptionWrapper implements HandlerWrapper
@@ -284,9 +284,9 @@ declare(strict_types=1);
 namespace App\Domain\News\WriteSide\CreateNewsArticle;
 
 use App\Service\Lock\LockService;
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Query\Query;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Lock\LockInterface;
 

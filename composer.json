@@ -1,5 +1,5 @@
 {
-  "name": "digital-craftsman/cqs-routing",
+  "name": "buron-digital/cqs-routing",
   "description": "Build Symfony endpoints from typed commands, queries and handlers instead of fat controllers. Request decoding, DTO construction, validation, transactions and responses are handled by reusable components.",
   "type": "symfony-bundle",
   "require": {
@@ -8,8 +8,8 @@
     "symfony/serializer": "^7.4|^8.0"
   },
   "require-dev": {
-    "digital-craftsman/ids": "^2.5",
-    "digital-craftsman/self-aware-normalizers": "^1.4",
+    "buron-digital/ids": "^3.0.0",
+    "buron-digital/self-aware-normalizers": "^2.0.0",
     "friendsofphp/php-cs-fixer": "^3.95",
     "phpunit/phpunit": "^13.4",
     "symfony/property-access": "^7.4|^8.0",
@@ -19,19 +19,19 @@
   },
   "autoload": {
     "psr-4": {
-      "DigitalCraftsman\\CQSRouting\\": "src/"
+      "BuronDigital\\CQSRouting\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "DigitalCraftsman\\CQSRouting\\": "tests/"
+      "BuronDigital\\CQSRouting\\": "tests/"
     }
   },
   "license": "MIT",
   "authors": [
     {
       "name": "Christian Kolb",
-      "email": "info@digital-craftsman.de"
+      "email": "info@buron.digital"
     }
   ],
   "config": {

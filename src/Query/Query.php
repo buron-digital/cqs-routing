@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Query;
+namespace BuronDigital\CQSRouting\Query;
 
 interface Query
 {

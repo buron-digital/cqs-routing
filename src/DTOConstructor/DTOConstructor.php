@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\DTOConstructor;
+namespace BuronDigital\CQSRouting\DTOConstructor;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Query\Query;
 
 /**
  * The DTO constructor is there to construct the command or query from the request data. It also has to throw exceptions when there is data
  * missing. Depending on the implementation that might already be handled by the hydration method.
  *
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/process.md
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/examplesl/dto-constructor.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/process.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/examplesl/dto-constructor.md
  */
 interface DTOConstructor
 {

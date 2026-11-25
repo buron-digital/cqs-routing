@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
+namespace BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\HandlerWrapper\HandlerWrapper;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Test\Utility\LockSimulator;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\HandlerWrapper\HandlerWrapper;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Test\Utility\LockSimulator;
 use Symfony\Component\HttpFoundation\Request;
 
 final readonly class CreateNewsArticleHandlerWrapper implements HandlerWrapper

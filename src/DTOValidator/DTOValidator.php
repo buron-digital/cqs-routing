@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\DTOValidator;
+namespace BuronDigital\CQSRouting\DTOValidator;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -19,8 +19,8 @@ use Symfony\Component\HttpFoundation\Request;
  * - Validate any of the value objects in it (that's the task of the constructors).
  * - Validate any kind of business logic including access validation.
  *
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/process.md
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/examples/dto-validator.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/process.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/examples/dto-validator.md
  *
  * @psalm-import-type NormalizedConfigurationParameters from RoutePayload
  */

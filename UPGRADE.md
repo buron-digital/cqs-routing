@@ -1,5 +1,41 @@
 # Upgrade guide
 
+## From 2.2.* to 3.0.0
+
+### Renamed package and namespace
+
+The package moved from `digital-craftsman/cqs-routing` to `buron-digital/cqs-routing` and the namespace from `DigitalCraftsman\CQSRouting` to `BuronDigital\CQSRouting`. Apart from the names, nothing changed, so the upgrade is a plain search and replace.
+
+1. Replace the package in your `composer.json`.
+
+   Before:
+   ```json
+   "digital-craftsman/cqs-routing": "^2.2"
+   ```
+
+   After:
+   ```json
+   "buron-digital/cqs-routing": "^3.0.0"
+   ```
+
+2. Replace the namespace in your whole project – not only in `src` and `tests`, but also in `config` (e.g. `config/bundles.php` and service or Doctrine configuration), migrations, templates and all other files that contain class names. Search for `DigitalCraftsman\CQSRouting\` and replace it with `BuronDigital\CQSRouting\` (e.g. with "Replace in Files" of your IDE) or run the following command in the root of your project. It also covers escaped class names like `'DigitalCraftsman\\CQSRouting\\…'` in strings:
+
+   ```shell
+   grep -rlE 'DigitalCraftsman\\+CQSRouting' --exclude-dir=vendor --exclude-dir=var --exclude-dir=node_modules --exclude-dir=.git . \
+     | xargs perl -pi -e 's/DigitalCraftsman(\\+)CQSRouting/BuronDigital$1CQSRouting/g'
+   ```
+
+   When you switch all packages (`self-aware-normalizers`, `ids`, `date-time-precision`, `deserializing-connection`, `cqs-routing`) at once, you can replace `DigitalCraftsman` with `BuronDigital` instead.
+
+3. Update the packages and clear the cache:
+
+   ```shell
+   composer update "buron-digital/*"
+   bin/console cache:clear
+   ```
+
+4. Check where class names are stored outside of your code. For example, PHP-serialized messages in Symfony Messenger queues or objects in persistent cache pools still contain the previous class names. Let the queues run empty and clear those pools when deploying the change.
+
 ## From 2.1.* to 2.2.0
 
 ### Dropped support for PHP 8.4

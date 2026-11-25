@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
+namespace BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
 
-use DigitalCraftsman\CQSRouting\Command\CommandHandler;
-use DigitalCraftsman\CQSRouting\Test\Entity\NewsArticle;
-use DigitalCraftsman\CQSRouting\Test\Repository\NewsArticleInMemoryRepository;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\NewsArticleId;
+use BuronDigital\CQSRouting\Command\CommandHandler;
+use BuronDigital\CQSRouting\Test\Entity\NewsArticle;
+use BuronDigital\CQSRouting\Test\Repository\NewsArticleInMemoryRepository;
+use BuronDigital\CQSRouting\Test\ValueObject\NewsArticleId;
 
 final readonly class CreateNewsArticleCommandHandler implements CommandHandler
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\HandlerWrapper;
+namespace BuronDigital\CQSRouting\HandlerWrapper;
 
-use DigitalCraftsman\CQSRouting\Command\Command;
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\Command\Command;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -26,8 +26,8 @@ use Symfony\Component\HttpFoundation\Request;
  * It must not be used to:
  * - Handle any kind of business logic.
  *
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/process.md
- * @see https://github.com/digital-craftsman-de/cqs-routing/blob/main/docs/examples/handler-wrapper.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/process.md
+ * @see https://github.com/buron-digital/cqs-routing/blob/main/docs/examples/handler-wrapper.md
  *
  * @psalm-import-type NormalizedConfigurationParameters from RoutePayload
  */

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
+namespace BuronDigital\CQSRouting\Test\Domain\Tasks\ReadSide\GetTasks;
 
-use DigitalCraftsman\CQSRouting\Query\Query;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\ActionId;
-use DigitalCraftsman\CQSRouting\Test\ValueObject\UserId;
+use BuronDigital\CQSRouting\Query\Query;
+use BuronDigital\CQSRouting\Test\ValueObject\ActionId;
+use BuronDigital\CQSRouting\Test\ValueObject\UserId;
 
 final readonly class GetTasksQuery implements Query
 {

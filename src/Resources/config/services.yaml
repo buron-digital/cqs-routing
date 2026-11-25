@@ -4,51 +4,51 @@ imports:
 services:
 
   # Request decoders
-  DigitalCraftsman\CQSRouting\RequestDecoder\JsonRequestDecoder:
+  BuronDigital\CQSRouting\RequestDecoder\JsonRequestDecoder:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.request_decoder' ]
 
   # DTO constructors
-  DigitalCraftsman\CQSRouting\DTOConstructor\SerializerDTOConstructor:
+  BuronDigital\CQSRouting\DTOConstructor\SerializerDTOConstructor:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.dto_constructor' ]
 
   # Handler wrappers
-  DigitalCraftsman\CQSRouting\HandlerWrapper\SilentExceptionWrapper:
+  BuronDigital\CQSRouting\HandlerWrapper\SilentExceptionWrapper:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.handler_wrapper' ]
 
   # Response constructors
-  DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor:
+  BuronDigital\CQSRouting\ResponseConstructor\EmptyJsonResponseConstructor:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.response_constructor' ]
 
-  DigitalCraftsman\CQSRouting\ResponseConstructor\EmptyResponseConstructor:
+  BuronDigital\CQSRouting\ResponseConstructor\EmptyResponseConstructor:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.response_constructor' ]
 
-  DigitalCraftsman\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor:
+  BuronDigital\CQSRouting\ResponseConstructor\SerializerJsonResponseConstructor:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.response_constructor' ]
 
-  DigitalCraftsman\CQSRouting\ResponseConstructor\StreamedResponseConstructor:
+  BuronDigital\CQSRouting\ResponseConstructor\StreamedResponseConstructor:
     autowire: true
     autoconfigure: true
     tags: [ 'cqs_routing.response_constructor' ]
 
   # Service map
-  DigitalCraftsman\CQSRouting\ServiceMap\ServiceMap:
+  BuronDigital\CQSRouting\ServiceMap\ServiceMap:
     autowire: true
     autoconfigure: true
 
   # Route configuration builder
-  DigitalCraftsman\CQSRouting\Routing\RouteConfigurationBuilder:
+  BuronDigital\CQSRouting\Routing\RouteConfigurationBuilder:
     arguments:
       $defaultRequestValidatorClassesForCommand: '%cqs_routing.command.default_request_validator_classes%'
       $defaultRequestDecoderClassForCommand: '%cqs_routing.command.default_request_decoder_class%'
@@ -66,12 +66,12 @@ services:
       $defaultResponseConstructorClassForQuery: '%cqs_routing.query.default_response_constructor_class%'
 
   # Controllers
-  DigitalCraftsman\CQSRouting\Controller\CommandController:
+  BuronDigital\CQSRouting\Controller\CommandController:
     autoconfigure: true
     autowire: true
     tags: [ 'controller.service_arguments' ]
 
-  DigitalCraftsman\CQSRouting\Controller\QueryController:
+  BuronDigital\CQSRouting\Controller\QueryController:
     autoconfigure: true
     autowire: true
     tags: [ 'controller.service_arguments' ]

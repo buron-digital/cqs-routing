@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\TestUtility;
+namespace BuronDigital\CQSRouting\TestUtility;
 
-use DigitalCraftsman\CQSRouting\Controller\QueryController;
-use DigitalCraftsman\CQSRouting\Routing\RouteBuilder;
-use DigitalCraftsman\CQSRouting\Routing\RouteConfiguration;
-use DigitalCraftsman\CQSRouting\Routing\RouteConfigurationBuilder;
-use DigitalCraftsman\CQSRouting\Routing\RoutePayload;
+use BuronDigital\CQSRouting\Controller\QueryController;
+use BuronDigital\CQSRouting\Routing\RouteBuilder;
+use BuronDigital\CQSRouting\Routing\RouteConfiguration;
+use BuronDigital\CQSRouting\Routing\RouteConfigurationBuilder;
+use BuronDigital\CQSRouting\Routing\RoutePayload;
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouterInterface;
 

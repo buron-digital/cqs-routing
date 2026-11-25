@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
+namespace BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle;
 
-use DigitalCraftsman\CQSRouting\Command\CommandHandler;
-use DigitalCraftsman\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
+use BuronDigital\CQSRouting\Command\CommandHandler;
+use BuronDigital\CQSRouting\Test\Domain\News\WriteSide\CreateNewsArticle\Exception\NewsArticleAlreadyExists;
 
 final readonly class FailingCreateNewsArticleCommandHandler implements CommandHandler
 {
